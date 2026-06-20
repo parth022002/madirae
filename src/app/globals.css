@@ -1,0 +1,61 @@
+@import "../styles/animations.css";
+@import "../styles/three.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Cormorant Garamond";
+  --font-body: "Inter";
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: #050403;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background: #050403;
+  color: #d8cfbf;
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.7;
+  transition: background-color 500ms ease, color 500ms ease;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  transition: transform 700ms ease, opacity 500ms ease, filter 500ms ease;
+}
+
+::selection {
+  background: #d9a441;
+  color: #050403;
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .section-title {
+    @apply font-display text-4xl leading-[1.12] text-champagne sm:text-5xl lg:text-6xl;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.28em] text-gold;
+  }
+
+  .glass-panel {
+    @apply rounded-xl border border-white/10 bg-white/[0.055] backdrop-blur-xl transition-colors duration-500;
+  }
+}

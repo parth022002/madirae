@@ -1,0 +1,42 @@
+{
+  "name": "madirae-co-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:lan": "next dev --hostname 0.0.0.0 --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "start:lan": "next start --hostname 0.0.0.0 --port 3000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/third-parties": "^16.2.7",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@sanity/client": "^6.24.3",
+    "@sentry/browser": "^10.56.0",
+    "@supabase/supabase-js": "^2.48.1",
+    "@vercel/speed-insights": "^2.0.0",
+    "firebase": "^11.1.0",
+    "framer-motion": "^11.15.0",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.18",
+    "lucide-react": "^0.468.0",
+    "next": "^15.1.2",
+    "nodemailer": "^8.0.10",
+    "openai": "^4.77.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "baseline-browser-mapping": "^2.10.29",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.1.2",
+    "postcss": "^8.4.49",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.17"
+  }
+}

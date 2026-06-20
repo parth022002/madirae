@@ -1,0 +1,34 @@
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.liquid-divider {
+  position: relative;
+}
+
+.liquid-divider::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 54px;
+  background: linear-gradient(180deg, transparent, rgba(217, 164, 65, 0.12), transparent);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

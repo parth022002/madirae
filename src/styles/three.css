@@ -1,0 +1,9 @@
+canvas {
+  touch-action: none;
+}
+
+.three-shell {
+  background:
+    radial-gradient(circle at 50% 15%, rgba(217, 164, 65, 0.18), transparent 32%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(42, 19, 12, 0.95));
+}
